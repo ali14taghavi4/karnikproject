@@ -1,9 +1,22 @@
+@import './font.css';
 html,
 body {
+  background-color: var(--my-bg-color);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+  --my-primary-color:#0049a5;
+  --my-primary-2-color:#ffffff;
+  --my-secondary-color:#D0A617;
+  /*--my-secondary-color:#B0002B;*/
+  --my-secondary-2-color: #FFEFCA;
+  --my-skip-color:#008A64;
+  --my-skip-2-color: #23C197;
+  --my-bg-color: #F7F8FF;
+  --my-text-color: #444655;
+  --my-text-second-color:#bdbdbd;
 }
 
 a {
@@ -12,5 +25,8 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  font-family: karnik;
+  direction: rtl;
+  box-sizing: border-box; 
 }
+

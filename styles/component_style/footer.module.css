@@ -1,0 +1,203 @@
+.footer{
+    background-color: var(--my-bg-color);
+}
+.footer_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer_navbar_container {
+
+    width:90%;
+    margin: .7rem ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer_navbar_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: karnik;
+    color: var(--my-text-color);
+    font-weight:normal;
+    font-size: .95rem;
+    margin-left: .5rem;
+}
+.footer_navbar_item:hover{
+    color: var(--my-primary-color);
+    font-weight:bold;
+}
+.footer_navbar_item:hover:active{
+    color: var(--my-primary-color);
+    font-weight: bolder;
+}
+.footer_social_networks {
+    width: 80%;
+    margin: .45rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_buttons {
+    width: 90%;
+    margin: .4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_button {
+
+    width: 20%;
+    margin:.2rem .1rem;
+    padding: .2rem .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .95rem;
+    font-weight: 500;
+    font-family: karnik;
+    color: var(--my-text-color);
+    background-color: var(--my-bg-color);
+    border: 1px solid var(--my-primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.footer_button:hover {
+    color:#ffffff;
+    background-color: var(--my-primary-color);
+}
+.footer_buttons_bottom {
+
+    width: 80%;
+    margin: .4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: karnik;
+    font-size: .7rem;
+    color: var(--my-text-color);
+    font-weight: 300;
+
+}
+.footer_buttons_bottom_item{
+
+    border-left: 1px solid var(--my-text-second-color);
+    padding:.0rem .7rem;
+
+}
+.footer_buttons_bottom_item:last-of-type{
+    border: 0;
+}
+.footer_buttons_bottom_item:hover {
+    color: var(--my-primary-color);
+}
+.social_networks_item {
+
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    color: var(--my-text-color);
+
+}
+.footer_social_networks div:nth-child(1):hover{
+    background-color: 	#1DA1F2;
+    color: #ffffff;
+}
+.footer_social_networks div:nth-child(3):hover{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+.footer_social_networks div:nth-child(2):hover{
+    background-color:  #833AB4;
+    color: #ffffff;
+}
+.footer_social_networks div:nth-child(4):hover{
+    background-color:  #0088cc;
+    color: #ffffff;
+}
+.footer_social_networks div:nth-child(5):hover{
+    background-color:  #2867B2;
+    color: #ffffff;
+}
+
+.footer_logos {
+
+    width: 70%;
+    margin: .5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.footer_karnik_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 780px) {
+    .footer_navbar_container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .footer_navbar_item {
+        font-size: 1.4rem;
+    }
+    .footer_buttons {
+        flex-direction: column;
+    }
+    .footer_button {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .footer_buttons_bottom_item {
+        border:0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .footer_button {
+        width: 75%;
+    }
+    .footer_buttons_bottom {
+        flex-direction: column;
+    }
+    .footer_buttons_bottom_item {
+        width: .4rem auto;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .footer_logos {
+        flex-direction: column;
+    }
+    .footer_karnik_logo{
+        order: -1;
+    }
+
+}
+@media only screen and (max-width: 290px)  {
+    .footer_navbar_item {
+        font-size: 1rem;
+    }
+    .footer_button {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 210px) {
+    .footer_navbar_item {
+        font-size: .7rem;
+    }
+}

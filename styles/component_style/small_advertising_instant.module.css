@@ -1,0 +1,55 @@
+.small_ad_container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: .75rem;
+    border: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+.small_ad_container_first {
+    border-radius: 3.5px;
+    width: 2.4rem;
+    height: 1.8rem;
+    margin-right: 1.5rem;
+    margin-top: -.25rem;
+    padding-top: .3rem;
+    box-sizing: content-box;
+    position: relative;
+    background:  #ff3e1c ;
+    color: white;
+    font-size: .8rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+.small_ad_container_first:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: .75rem solid #ffffff;
+    border-left: 1.2rem solid transparent;
+    border-right: 1.2rem solid transparent;
+  }
+
+
+.small_ad_container_second {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.small_ad_container:hover {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: 4px solid #f95a19;
+    /*box-shadow: rgba(249, 90, 25, 0.15) 1px 2px, rgba(249, 90, 25, 0.12) 0px 5px, rgba(249, 90, 25, 0.09) 0px 8px, rgba(249, 90, 25, 0.07) 0px 11px, rgba(249, 90, 25, 0.05) 0px 14px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

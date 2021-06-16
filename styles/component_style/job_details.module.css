@@ -1,0 +1,287 @@
+.large_ad_header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .5rem;
+    background-color: var(--my-primary-2-color);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+.large_header_right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.header_job_title {
+    font-size: 1rem;
+    color: var(--my-text-color);
+}
+.header_company_name {
+    font-size: .9rem;
+    color: var(--my-text-color);
+}
+.header_more_detail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: .75rem;
+    color: var(--my-text-color);
+}
+.header_more_detail i {
+    font-size: 1rem;
+    color: var(--my-text-second-color);
+}
+.header_city {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: .9rem;
+}
+.header_city * {
+    margin: .1rem;
+}
+.header_uploadtime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: .9rem;
+}
+.header_uploadtime * {
+    margin: .1rem;
+}
+.header_salary {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--my-skip-2-color);
+    margin-left: .9rem;
+}
+.header_salary * {
+    margin: .1rem;
+}
+.large_header_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: .35rem;
+}
+
+.resume_button {
+    margin-top: .35rem;
+    padding: .3rem 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: karnik;
+    cursor: pointer;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, var(--my-primary-color) 0%, var(--my-skip-color) 100%);
+    border-image-slice: 1;
+    background: #fff;
+    color: var(--my-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.resume_button:hover {
+    background: linear-gradient(to right, var(--my-primary-color) , var(--my-skip-color) );
+    color: #fff;
+}
+/*.about_company_button {
+    letter-spacing: 1px;
+    margin-left: .35rem;
+    margin-top: .3rem;
+    padding: .4rem .4rem;
+    font-size: 1.1rem;
+    font-family: karnik;
+    background-color: #ffffff;
+    color: var(--my-secondary-color);
+    border: 0;
+    cursor: pointer;
+}*/
+.about_company_button {
+    margin-top: .3rem;
+    padding: .3rem 1rem;
+    font-size: .9rem;
+    font-family: karnik;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: var(--my-secondary-color);
+    color:#fff;
+    border:none;
+    position:relative;
+    transition:800ms ease all;
+    outline:none;
+    border-radius: 3.5px;
+}
+.about_company_button:hover {
+    background:#fff;
+    color: var(--my-secondary-color);
+}
+.about_company_button:before, .about_company_button:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: var(--my-secondary-color);
+    transition:400ms ease all;
+}
+.about_company_button:after {
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.about_company_button:hover:before, .about_company_button:hover:after {
+    width:100%;
+    transition:800ms ease all;
+}
+.job_details {
+
+    background-color: var(--my-primary-2-color);
+    padding: .5rem .5rem;
+    margin:.1rem 0 1rem 0;
+    height: 700px;
+    overflow-y:auto;
+    border-radius: 10px;
+
+}
+.abilities {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.job_details h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--my-text-color)
+    ;
+}
+.abilities_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.abilities_items span {
+    padding: .25rem .75rem ;
+    font-size: .9rem;
+    background-color: var(--my-secondary-2-color);
+    color: var(--my-text-color);
+    border-radius: 4px;
+    border: 2px solid var(--my-secondary-color);
+    margin-left: .4rem;
+    margin-top: .3rem;
+}
+.company_language {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.language_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.language_items span {
+    padding: .3rem .6rem;
+    font-size: .9rem;
+    background-color: var(--my-secondary-2-color);
+    color: var(--my-text-color);
+    border-radius: 4px;
+    border: 2px solid var(--my-secondary-color);
+    margin-left: .25rem;
+    margin-top: .3rem;
+}
+.job_pos_desc {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.job_pos_desc_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.job_pos_desc_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: .95rem;
+    word-wrap: break-word;
+    color: var(--my-text-color);
+}
+.job_pos_desc_item i {
+    font-size: .8rem;
+    color: var(--my-skip-2-color);
+}
+.job_pos_desc_item * {
+    margin-left: .6rem ;
+}
+.scoring_skills {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: .95rem;
+    color: var(--my-text-color);
+}
+.scoring_skills span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.scoring_skills i {
+    font-size: .8rem;
+    color: var(--my-skip-2-color);
+    margin-left: .6rem;
+}
+.expected_indicators {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: .95rem;
+    color: var(--my-text-color);
+
+}
+.expected_indicators span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.expected_indicators i {
+    font-size: .8rem;
+    color: var(--my-skip-2-color);
+    margin-left: .6rem;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .large_header_right {
+        width: 60%;
+    }
+    .large_header_left {
+        width: 40%;
+    }
+}

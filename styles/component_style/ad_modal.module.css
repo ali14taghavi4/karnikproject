@@ -1,0 +1,332 @@
+.modal_ad_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*position: sticky;
+    top: -1rem;
+    background-color: var(--my-bg-color);*/
+}
+.modal_ad_header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: .75rem;
+    color: var(--my-text-color);
+}
+.modal_ad_header_right i {
+    font-size: 1rem;
+    color: var(--my-text-second-color);
+}
+.modal_header_job_title {
+    font-size: 1rem;
+    color: var(--my-text-color);
+}
+.modal_header_company_name {
+    font-size: .9rem;
+    color: var(--my-text-color);
+}
+.modal_header_city {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: .9rem;
+}
+.modal_header_city * {
+    margin: .1rem;
+}
+.modal_header_uploadtime {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: .9rem;
+}
+.modal_header_uploadtime * {
+    margin: .1rem;
+}
+.modal_header_salary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--my-skip-2-color);
+    margin-left: .9rem;
+}
+.modal_header_salary * {
+    margin: .1rem;
+}
+.modal_header_button_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_resume_button {
+    margin-top: .7rem;
+    padding: .4rem .8rem;
+    font-size: .8rem;
+    font-weight: 350;
+    font-family: karnik;
+    cursor: pointer;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, var(--my-primary-color) 0%, var(--my-skip-color) 100%);
+    border-image-slice: 1;
+    background: #fff;
+    color: var(--my-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.modal_resume_button:hover {
+    background: linear-gradient(to right, var(--my-primary-color) , var(--my-skip-color) );
+    color: #fff;
+}
+.modal_about_company_button {
+    margin-top: .7rem;
+    padding: .4rem .8rem;
+    font-size: .8rem;
+    font-family: karnik;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 350;
+    text-transform: uppercase;
+    background: var(--my-secondary-color);
+    color:#fff;
+    border:none;
+    position:relative;
+    transition:800ms ease all;
+    outline:none;
+    border-radius: 3.5px;
+}
+.modal_about_company_button:hover {
+    background:#fff;
+    color: var(--my-secondary-color);
+}
+.modal_about_company_button:before, .modal_about_company_button:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: var(--my-secondary-color);
+    transition:400ms ease all;
+}
+.modal_about_company_button:after {
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.modal_about_company_button:hover:before, .modal_about_company_button:hover:after {
+    width:100%;
+    transition:800ms ease all;
+}
+.modal_job_details {
+
+    background-color: var(--my-primary-2-color);
+    padding: .5rem .5rem;
+    margin:.1rem 0 1rem 0;
+    height: 700px;
+    border-radius: 10px;
+
+}
+.modal_abilities {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.modal_job_details h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--my-text-color);
+}
+.modal_abilities_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.modal_abilities_items span {
+    padding: .25rem .75rem ;
+    font-size: .9rem;
+    background-color: var(--my-secondary-2-color);
+    color: var(--my-text-color);
+    border-radius: 4px;
+    border: 2px solid var(--my-secondary-color);
+    margin-left: .4rem;
+    margin-top: .3rem;
+}
+.modal_company_language {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.modal_language_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.modal_language_items span {
+    padding: .3rem .6rem;
+    font-size: .9rem;
+    background-color: var(--my-secondary-2-color);
+    color: var(--my-text-color);
+    border-radius: 4px;
+    border: 2px solid var(--my-secondary-color);
+    margin-left: .25rem;
+    margin-top: .3rem;
+}
+.modal_job_pos_desc {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.modal_job_pos_desc_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.modal_job_pos_desc_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: .95rem;
+    word-wrap: break-word;
+    color: var(--my-text-color);
+} 
+.modal_job_pos_desc_item span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.modal_job_pos_desc_item i {
+    font-size: .8rem;
+    color: var(--my-skip-2-color);
+}
+.modal_job_pos_desc_item * {
+    margin-left: .6rem ;
+}
+.modal_scoring_skills {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: .95rem;
+    color: var(--my-text-color);
+}
+.modal_scoring_skills_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.modal_scoring_skills span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.modal_scoring_skills i {
+    font-size: .8rem;
+    color: var(--my-skip-2-color);
+    margin-left: .6rem;
+}
+.modal_expected_indicators {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: .95rem;
+    color: var(--my-text-color);
+
+}
+.modal_expected_indicators_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.modal_expected_indicators span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.modal_expected_indicators i {
+    font-size: .8rem;
+    color: var(--my-skip-2-color);
+    margin-left: .6rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 350px)  {
+    .modal_job_details h2 {
+        font-size: 1rem;
+    }
+    .modal_ad_header_right {
+        font-size: .7rem;
+    }
+    .modal_abilities_items span , .modal_language_items span {
+        font-size: .8rem;
+    }
+    .modal_job_pos_desc_item, .modal_expected_indicators, .modal_scoring_skills  {
+        font-size: .75rem;
+    }
+    .modal_header_job_title {
+        font-size: .75rem;
+    }
+    .modal_header_company_name  {
+        font-size: .8rem;
+    }
+    .modal_resume_button {
+        font-size: .7rem;
+        font-weight: normal;
+        padding: .4rem .5rem;
+    }
+    .modal_about_company_button {
+        font-size: .7rem;
+        font-weight: normal;
+        padding: .4rem .5rem;
+    }
+}
+@media only screen and (max-width: 330px)  {
+    .modal_header_job_title {
+        font-size: .65rem;
+    }
+    .modal_header_company_name  {
+        font-size: .7rem;
+    }
+    .modal_resume_button {
+        font-size: .65rem;
+        font-weight: normal;
+        padding: .4rem .05rem;
+    }
+    .modal_about_company_button {
+        font-size: .65rem;
+        font-weight:normal;
+        padding: .4rem .05rem;
+    }
+}
+@media only screen and (max-width: 310px)   {
+    .modal_ad_header_right {
+        width: 50%;
+
+    }
+    .modal_header_button_container {
+        width: 50%;
+    }
+}

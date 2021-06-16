@@ -1,0 +1,37 @@
+.small_ad_container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f6ecff;
+    margin-bottom: .75rem;
+    border: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+.ribbon {
+    margin-top: -.25rem;
+}
+.ribbon i{
+    color: #765295;
+    
+    font-size: 2.4rem;
+    margin-right: 1.5rem ;
+    margin-top: 0rem;
+}
+
+.small_ad_container_second {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.small_ad_container:hover {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: 4px solid #765295;
+    /*box-shadow: rgba(249, 90, 25, 0.15) 1px 2px, rgba(249, 90, 25, 0.12) 0px 5px, rgba(249, 90, 25, 0.09) 0px 8px, rgba(249, 90, 25, 0.07) 0px 11px, rgba(249, 90, 25, 0.05) 0px 14px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

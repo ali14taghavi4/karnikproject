@@ -1,0 +1,155 @@
+
+.jobs_advertising_container {
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 92%;
+    margin: 1rem auto;
+
+}
+/*about modal*/
+.modal_click_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .25rem .25rem 1rem .25rem;
+}
+.next_prev_button button{
+    cursor: pointer;
+    padding: .35rem .7rem;
+    font-size: .75rem;
+    border-radius: 5px;
+    border: 0;
+    color: #ffffff;
+    background-color: var(--my-primary-color);
+}
+.time_button {
+    cursor: pointer;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: var(--my-secondary-color);
+}
+.large_ad_container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    background-color: inherit;
+    margin: .4rem .5rem .4rem .5rem;
+    border-radius: 5px;
+}
+.small_ad_container {
+    
+    width: 34%;
+    background-color:  inherit;
+    border-radius: 5px;
+
+}
+.load_more_button_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5rem auto 5rem auto;
+    width: 45%;
+    
+}
+
+.load_more_button {
+    width: 100%;
+    height: 2.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color:var(--my-text-color);
+    font-size: 1.1rem;
+    font-weight: 550;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    font-weight: 550;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border: 0;
+    background-image: linear-gradient(to right,var(--my-primary-2-color) 0%, var(--my-primary-color) 51%, var(--my-primary-2-color)  100%);
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    cursor: pointer;
+}
+.load_more_button:hover {
+    background-position: right center; 
+}
+
+@media only screen and (max-width: 1200px){
+    .jobs_advertising_container {
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .jobs_advertising_container {
+        width: 99.9%;
+    }
+    .large_ad_container  {
+        width: 58.5%;
+    }
+    .small_ad_container {
+        width: 41.5%;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .load_more_button_container {
+        width: 55%;
+    }
+    .load_more_button {
+        font-size: 1.2rem;
+        font-weight: 575;
+    }
+}
+@media only screen and (max-width: 800px){
+    .load_more_button_container {
+        width: 60%;
+    }
+    .load_more_button {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .large_ad_container {
+        display: none;
+    }
+    .small_ad_container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .large_ad_container {
+        display: none;
+    }
+    .small_ad_container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .large_ad_container {
+        display: none;
+    }
+    .small_ad_container {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
