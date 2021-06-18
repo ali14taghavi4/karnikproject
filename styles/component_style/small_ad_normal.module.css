@@ -199,31 +199,31 @@
 }
 @media only screen and (max-width: 360px) {
     .job_title {
-        font-size: .7rem;
+        font-size: .85rem;
     }
     .job_location {
-        font-size: .67rem;
+        font-size: .75rem;
     }
     .job_location i{
-        font-size: .85rem;
+        font-size: .9rem;
     }
     .job_type {
-        font-size: .67rem;
+        font-size: .75rem;
     }
     .job_salary {
-        font-size: .67rem;
+        font-size: .75rem;
     }
     .company_name {
-        font-size: .65rem;
+        font-size: .75rem;
     }
     .upload_time {
-        font-size: .7rem;
+        font-size: .8rem;
     }
     .upload_time i {
-        font-size: .85rem;
+        font-size: .9rem;
     }
     .icons_container i {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .small_ad_left {
         margin-left: .2rem;
