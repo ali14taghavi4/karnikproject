@@ -65,29 +65,7 @@ const Companys = () => {
     else {
         nstep = steps + showcase;
     }
-    //boolshit |:
-    /*function incrementone() {
-        if( (steps < length-1) && (steps+7 <length) ) {
-            setSteps(prevState => prevState + 1);
-        }
-        else{
-            console.log('gav');
-            setSteps(0);
-        }
-    }
-    function decrementone() {
-        setSteps(length-7);
-        if( steps >= 1 ){
-            setSteps(prevState => prevState - 1);
-        }
-    }
-    React.useEffect(() => {
-        const timeout = setTimeout(incrementone
-        , 5000);
-    
-        return () => clearTimeout(timeout);
-    }, );
-    */
+ 
     var sliceditems = companys.slice(steps, nstep);
     return (
         <div className={classes.slider_container}>

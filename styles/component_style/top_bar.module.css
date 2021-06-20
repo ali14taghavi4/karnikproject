@@ -56,7 +56,7 @@
 }
 .header {
     background-color: var(--my-bg-color);
-    box-shadow: 1px 2px rgba(0,0,0,25%)
+    box-shadow: 1px 2px rgba(0,0,0,25%);
 }
 .top_nav_container {
     width: 92%;
